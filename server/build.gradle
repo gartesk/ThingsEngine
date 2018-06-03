@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion Versions.compileSdk
+    defaultConfig {
+        applicationId "com.gartesk.thingsengine.server"
+        minSdkVersion 24
+        targetSdkVersion Versions.targetSdk
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly Libs.things
+    implementation Libs.kotlin
+    implementation Libs.rxJava
+    implementation Libs.rxAndroid
+}
