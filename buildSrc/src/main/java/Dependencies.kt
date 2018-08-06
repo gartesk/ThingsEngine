@@ -1,11 +1,11 @@
 object Versions {
     const val supportLib = "27.1.1"
-    const val rxJava = "2.1.12"
+    const val rxJava = "2.2.0"
     const val rxAndroid = "2.0.2"
     const val things = "1.0"
     const val playServices = "11.6.0"
-    const val kotlin = "1.2.41"
-    const val gradle = "3.1.0"
+    const val kotlin = "1.2.60"
+    const val gradle = "3.1.3"
     const val targetSdk = 27
     const val compileSdk = 27
 }
